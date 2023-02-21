@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- tailwindcss  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swiperJS  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body class="">
+    <!-- ---------------------header----------------------- -->
+    <div class="container mx-auto bg-white">
+        <div class="grid grid-rows grid-flow-col justify-center">
+         
+            <div class="col-span-2">
+                <img src="/image/header/logo1.png" alt="">
+            </div>
+            <div class="row-span-2">
+                <img src="/image/header/logo2.gif" alt="">
+            </div>
+            <div class="row-span-3">
+                <img src="/image/header/logo3.jpg" alt="">
+            </div>
+          </div>
+    </div>
+    <!-- ---------------------header----------------------- -->
+
+    <marquee behavior="" direction="" class="p-3 border-y-2 border-indigo-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis hic omnis provident, repellat illum possimus tempora amet? Expedita minus harum magnam neque sapiente odit aut! Soluta veniam optio quos numquam?
+
+    </marquee>
+
+    <!-- -------------------------------navbar--------------------------- -->
+    <nav class="bg-indigo-700 shadow-lg">
+        <div class="container mx-auto ">
+            <div class="sm:flex justify-center">
+                <ul class="p-4 text-gray-400 sm:self-center text-xl border-t sm:border-none">
+                    <li class="sm:inline-block px-3">
+                        <i class="fa-solid fa-laptop text-white"></i>
+                        <a href="" class=" text-white text-1xl">Laptop</a>
+                    </li>
+                    <li class="sm:inline-block px-3">
+                        <i class="fa-solid fa-keyboard text-white"></i>
+                        <a href="" class=" text-white text-1xl">SecondHand</a>
+                    </li>
+                    <li class="sm:inline-block px-3">
+                        <i class="fa-solid fa-hand text-white"></i>
+                        <a href="" class="text-white text-1xl">Laptop Part</a>
+                    </li>
+                    <li class="sm:inline-block px-3">
+                        <i class="fa-solid fa-user text-white"></i>
+                        <a href="" class="text-white text-1xl">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- -------------------------------navbar--------------------------- -->
+
+    
+    <!-- ---------------------------------slider---------------------------------- -->
+      <div class="swiper mySwiper mt-3">
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide bg-cover bg-center" style="background-image: url('https://blog.daraz.pk/wp-content/uploads/2020/01/Gaming_laptops_Banner.png');">
+                <span class="text text-white ">Lenovo</span>
+            </div>
+            <div class="swiper-slide bg-cover bg-center" style="background-image: url('https://oyster.ignimgs.com/wordpress/stg.ign.com/2020/09/461767_AAA_laptops_1920x1080.jpg');">
+                <span class="text text-white ">MSI</span>
+            </div>
+            <div class="swiper-slide bg-cover bg-center" style="background-image: url('https://www.hp.com/us-en/shop/app/assets/images/uploads/prod/SLP_EvoLaptops_small1620051389166356.jpg');">
+                <span class="text text-white ">Dell</span>
+            </div>
+            <div class="swiper-slide bg-cover bg-center" style="background-image: url('https://blog.daraz.pk/wp-content/uploads/2020/01/Gaming_laptops_Banner.png');">
+                <span class="text text-white ">Mac Book</span>
+            </div>
+            <div class="swiper-slide bg-cover bg-center" style="background-image: url('https://oyster.ignimgs.com/wordpress/stg.ign.com/2020/09/461767_AAA_laptops_1920x1080.jpg');">
+                <span class="text text-white ">Asus</span>
+            </div>
+          </div>
+      
+      </div>
+    <!-- ---------------------------------slider---------------------------------- -->
+
+</body>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 10,
+      loop:true,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay:{
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+      },
+    });
+  </script>
+</html>
