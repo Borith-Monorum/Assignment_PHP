@@ -1,3 +1,16 @@
+(function(){
+  const menuToggle = document.querySelector('.menu-toggle');
+  const darkToggle = document.querySelector('.toggle-dark');
+
+  menuToggle.addEventListener('click',() => {
+    document.body.classList.toggle('menu.active');
+  })
+  darkToggle.addEventListener('click',(event) => {
+    event.preventDefault();
+    document.documentElement.classList.toggle('dark');
+})();
+
+
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,
     loop:true,
