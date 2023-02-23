@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,11 +14,11 @@
 <link rel="stylesheet" href="./style.css">
 <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 </head>
-<body class="bg-gray-100 dark:bg-gray-500">
+<body class=" bg-gray-100 dark:bg-gray-900">
   <section>
     <!-- ---------------------header----------------------- -->
     <div class="container  mx-auto bg-white mt-5">
-        <div class="grid grid-rows grid-flow-col justify-center bg-sky-500">
+        <div class="grid grid-rows grid-flow-col justify-center dark:bg-gray-900">
          
             <div class="">
                 <img src="./image/logo1.png" alt="">
@@ -37,14 +37,14 @@
 
     <!-- marquee  -->
     <div class="container mx-auto">
-      <marquee class="" behavior="" direction="" class="p-3 border-y-2 border-indigo-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis hic omnis provident, repellat illum possimus tempora amet? Expedita minus harum magnam neque sapiente odit aut! Soluta veniam optio quos numquam?
+      <marquee class="dark:text-gray-50 py-3" behavior="" direction="" class="p-3 border-y-2 border-indigo-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis hic omnis provident, repellat illum possimus tempora amet? Expedita minus harum magnam neque sapiente odit aut! Soluta veniam optio quos numquam?
       </marquee>
     </div>
     <!-- marquee  -->
   
 
     <!-- -------------------------------navbar--------------------------- -->
-    <nav class="sticky  dark:bg-slate-800 top-0 z-10 container  mx-auto bg-indigo-700 shadow-lg">
+    <nav class="sticky   top-0 z-10 container  mx-auto bg-indigo-700 shadow-lg">
         <div class=" container mx-auto  ">
             <div class=" md:flex flex-wrap justify-between">
               <ul class=" h-14 flex   text-gray-400 text-xl ">
@@ -53,23 +53,21 @@
                     <img class="rounded-full" width="40px" src="https://th.bing.com/th/id/OIP.GBYQyVTK3AsqMJytDri_mQAAAA?pid=ImgDet&w=381&h=377&rs=1" alt="">
                   </a>
                 </li>
-                <li class="flex-2 self-center md:hidden px-3 ">
-                  <button 
-                      class="w-10 h-5 rounded-full bg-white flex items-center transition duration-300 focus:outline-none shadow"
-                      onclick="toggleTheme()">
-                      <div
-                          id="switch-toggle"
-                          class="w-6 h-6 relative rounded-full transition duration-500 transform bg-yellow-500 -translate-x-2 p-1 text-white">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                          </svg>
-                      </div>
-                  </button>
-                </li>             
+                
                 <li class="flex-2 self-center md:hidden px-3 ">
                   <i id="icon" class="fa-solid fa-bars hover:text-white"></i>
                 </li>             
+                <li class="list-none  md:hidden flex-2 self-center  px-5 ">
+                  <label for="dark-toggle" class="flex items-center cursor-pointer">
+                      <div class="relative">
+                      <input type="checkbox" name="dark-mode" id="dark-toggle" class="checkbox hidden">
+                      <div class="block border-[1px] dark:border-white border-white w-12 h-6 rounded-full"></div>
+                      <div class="dot absolute left-0 top-0  dark:bg-white bg-white w-6 h-6 rounded-full transition"></div>
+                      </div>
+                  </label>
+                </li>
               </ul>
+       
               <ul class="nav-list  mx-auto bg-indigo-700 text-center p-4  text-gray-400 md:self-center text-xl border-t md:border-none">
                     <li class="py-2 md:inline-block    px-3">
                         <i class="fa-solid fa-laptop text-white"></i>
@@ -87,8 +85,10 @@
                         <i class="fa-solid fa-user text-white"></i>
                         <a href="" class="text-white text-1xl">Contact Us</a>
                     </li>
-                  </ul>
-                <ul class="md:self-center">
+           
+              </ul>
+
+                <ul class="md:self-center flex">
                   <li class="md:inline-block  px-3 hidden lg:mt-0 mt-5 ">
                     <label class="relative block">
                       <span class="sr-only">Search</span>
@@ -98,14 +98,24 @@
                       <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="text" name="search"/>
                     </label>
                   </li>
+                  <li class="list-none   flex-2 self-center hidden md:block  px-5 ">
+                    <label for="dark-toggle" class="flex items-center cursor-pointer">
+                        <div class="relative">
+                        <input type="checkbox" name="dark-mode" id="dark-toggle" class="checkbox hidden">
+                        <div class="dot  self-center dark:bg-white bg-rose-500 w-6 h-6 rounded-full transition"></div>
+                        </div>
+                    </label>
+                  </li>
                 </ul>
-                
+                        
+         
 
               </div>
             </div>
-            <div class="bg-white dark:bg-black">
-              fl;aksjdf
-            </div>
+         
+                  
+           
+              
     </nav>
     <ul class="container mx-auto sm:self-center">
       <li class="md:inline-block  px-3 md:hidden lg:mt-0 mt-5 ">
@@ -122,7 +132,7 @@
 
     
     <!-- ---------------------------------slider---------------------------------- -->
-      <div class="container  mx-auto swiper mySwiper mt-3 sm:px-0 px-2">
+      <div class=" container  mx-auto swiper mySwiper mt-3 sm:px-0 px-2">
         <div class="swiper-wrapper ">
             <!-- Slides -->
             <div class="swiper-slide bg-cover bg-center" style="background-image: url('https://blog.daraz.pk/wp-content/uploads/2020/01/Gaming_laptops_Banner.png');">
@@ -146,26 +156,26 @@
     <!-- ---------------------------------slider---------------------------------- -->
   </section>
 
-<section class="category container mx-auto px-20 p-10 bg-white">
-  <div class="border border-t">
-        <!-- card  -->
-    <div class="border m-5 w-64 block max-w-sm rounded-lg bg-white shadow-lg">
+
+<div class="container flex justify-center  mx-auto dark:bg-neutral-700 border-gray-500 border  mt-4">
+<!-- card  -->
+    <div class=" border-rose-500 border m-10   w-80 max-w-sm rounded-xl bg-white shadow-lg overflow-hidden">
           <!-- background-image  -->
-          <div class="bg-origin-content rounded-t-xl mt-5 bg-contain bg-center bg-no-repeat " style="width: 100%;height: 200px; background-image: url('https://www.goldonecomputer.com/image/cache/catalog/Products/MSI/2023/GAMING/Cyborg-15-A12VF-200x200.jpg');"></div>
+      <div class="bg-origin-content rounded-t-xl mt-5 bg-contain bg-center bg-no-repeat " style="width: 100%;height: 200px; background-image: url('https://www.goldonecomputer.com/image/cache/catalog/Products/MSI/2023/GAMING/Cyborg-15-A12VF-200x200.jpg');"></div>
           <!--end background-image  -->
 
-        <div class="border py-2 bg-gradient-to-r from-pink-200 to-purple-200 text-2xl text-center font-extrabold ...">
-          <span class="drop-shadow-md bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500">
+        <div class=" py-2 bg-gradient-to-r from-pink-200 to-purple-200 text-2xl text-center font-extrabold ...">
+          <span class=" drop-shadow-md bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500">
             Special   <!-- Special -->
           </span>
         </div>
         <!-- body card   -->
-          <div  class="body p-3 dark:bg-slate-400">
-            <ul class="list-none md:list-disc list-outside mb-4 text-base text-neutral-600 ">
-                  <li class="list-none text-sky-500 text-center capitalize mb-2 text-xl font-medium leading-tight ">
+          <div  class="body p-3 border-t border-rose-500  dark:bg-gray-800">
+            <ul class="list-none md:list-disc list-outside mb-4 text-base text-neutral-600 dark:text-neutral-50">
+                  <li class="list-none dark:text-amber-300 text-sky-500 text-center capitalize mb-2 text-2xl font-medium leading-tight ">
                     DELL Alienware M15 R7 Original Spec
                   </li>
-                  <li class="list-none text-red-500 text-center capitalize mb-2 text-4xl font-medium leading-tight ">
+                  <li class="list-none text-red-500 dark:text-white text-center capitalize mb-2 text-4xl font-medium leading-tight ">
                     $ 1,999
                   </li>
                  <li class="truncate text-red-500">
@@ -204,68 +214,31 @@
                  <li class="truncate">
                   <a href="">  Battery 6-Cells 86Whr</a>
                  </li>
-                 <li class="truncate text-sky-600">
+                 <li class="truncate text-sky-600 dark:text-amber-200">
                   <a href="">  Free Gaming Backpack+4items</a>
                  </li>
-                 <li class="truncate text-sky-600">
+                 <li class="truncate text-sky-600 dark:text-amber-200">
                   <a href="">  1Year warranty on part.</a>
                  </li>
    
                 </ul>
-            <div class="text-center">
-              <button type="button" class=" inline-block rounded-full bg-indigo-400 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-indigo-600-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-indigo-600-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-indigo-600-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"data-te-ripple-init data-te-ripple-color="light">
+            <div class="text-center  ">
+              <button type="button" class=" rounded tracking-wider bg-amber-500  px-6 pt-2.5 pb-2 text-md font-medium uppercase leading-normal text-white  ">
                           Purchase 
               </button>
             </div>
           </div>
           <!-- body card   -->
     </div>
-        <!-- card  -->
-  </div>
-</section>
+<!--end card  -->
+</div>
+
 </body>
 
 <script src="./javascript.js"></script>
 <script>
-  const switchToggle = document.querySelector('#switch-toggle');
-const html = document.querySelector('html');
-let isDarkmode = false;
-const localDarkmode = JSON.parse(localStorage.getItem('isDarkmode'));
-
-const darkIcon = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-</svg>`
-
-const lightIcon = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-</svg>`
-
-function toggleTheme (){
-  isDarkmode = !isDarkmode
-  localStorage.setItem('isDarkmode', isDarkmode)
-  switchTheme()
-}
-if (localDarkmode) {
-isDarkmode = localDarkmode;
-html.classList.add('dark');
-}else{
-  html.classList.remove('dark')
-}
-function switchTheme (){
-  if (isDarkmode) {
-    switchToggle.classList.remove('bg-yellow-500','-translate-x-2')
-    switchToggle.classList.add('bg-gray-700','translate-x-full')
-    setTimeout(() => {
-      switchToggle.innerHTML = darkIcon
-    }, 250);
-  } else {
-    switchToggle.classList.add('bg-yellow-500','-translate-x-2')
-    switchToggle.classList.remove('bg-gray-700','translate-x-full')
-    setTimeout(() => {
-      switchToggle.innerHTML = lightIcon
-    }, 250);
+  tailwind.config = {
+  darkMode: 'class',
   }
-}
-switchTheme()
 </script>
 </html>
