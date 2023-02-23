@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="./style.css">
 <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100 dark:bg-gray-500">
   <section>
     <!-- ---------------------header----------------------- -->
     <div class="container  mx-auto bg-white mt-5">
@@ -44,7 +44,7 @@
   
 
     <!-- -------------------------------navbar--------------------------- -->
-    <nav class="sticky top-0 z-10 container  mx-auto bg-indigo-700 shadow-lg">
+    <nav class="sticky  dark:bg-slate-800 top-0 z-10 container  mx-auto bg-indigo-700 shadow-lg">
         <div class=" container mx-auto  ">
             <div class=" md:flex flex-wrap justify-between">
               <ul class=" h-14 flex   text-gray-400 text-xl ">
@@ -52,7 +52,20 @@
                   <a href="" class="" >
                     <img class="rounded-full" width="40px" src="https://th.bing.com/th/id/OIP.GBYQyVTK3AsqMJytDri_mQAAAA?pid=ImgDet&w=381&h=377&rs=1" alt="">
                   </a>
-              </li>
+                </li>
+                <li class="flex-2 self-center md:hidden px-3 ">
+                  <button 
+                      class="w-10 h-5 rounded-full bg-white flex items-center transition duration-300 focus:outline-none shadow"
+                      onclick="toggleTheme()">
+                      <div
+                          id="switch-toggle"
+                          class="w-6 h-6 relative rounded-full transition duration-500 transform bg-yellow-500 -translate-x-2 p-1 text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                          </svg>
+                      </div>
+                  </button>
+                </li>             
                 <li class="flex-2 self-center md:hidden px-3 ">
                   <i id="icon" class="fa-solid fa-bars hover:text-white"></i>
                 </li>             
@@ -89,6 +102,9 @@
                 
 
               </div>
+            </div>
+            <div class="bg-white dark:bg-black">
+              fl;aksjdf
             </div>
     </nav>
     <ul class="container mx-auto sm:self-center">
@@ -144,7 +160,7 @@
           </span>
         </div>
         <!-- body card   -->
-          <div class="body p-3">
+          <div  class="body p-3 dark:bg-slate-400">
             <ul class="list-none md:list-disc list-outside mb-4 text-base text-neutral-600 ">
                   <li class="list-none text-sky-500 text-center capitalize mb-2 text-xl font-medium leading-tight ">
                     DELL Alienware M15 R7 Original Spec
@@ -210,4 +226,46 @@
 </body>
 
 <script src="./javascript.js"></script>
+<script>
+  const switchToggle = document.querySelector('#switch-toggle');
+const html = document.querySelector('html');
+let isDarkmode = false;
+const localDarkmode = JSON.parse(localStorage.getItem('isDarkmode'));
+
+const darkIcon = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+</svg>`
+
+const lightIcon = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+</svg>`
+
+function toggleTheme (){
+  isDarkmode = !isDarkmode
+  localStorage.setItem('isDarkmode', isDarkmode)
+  switchTheme()
+}
+if (localDarkmode) {
+isDarkmode = localDarkmode;
+html.classList.add('dark');
+}else{
+  html.classList.remove('dark')
+}
+function switchTheme (){
+  if (isDarkmode) {
+    switchToggle.classList.remove('bg-yellow-500','-translate-x-2')
+    switchToggle.classList.add('bg-gray-700','translate-x-full')
+    setTimeout(() => {
+      switchToggle.innerHTML = darkIcon
+    }, 250);
+  } else {
+    switchToggle.classList.add('bg-yellow-500','-translate-x-2')
+    switchToggle.classList.remove('bg-gray-700','translate-x-full')
+    setTimeout(() => {
+      switchToggle.innerHTML = lightIcon
+    }, 250);
+  }
+}
+switchTheme()
+</script>
 </html>

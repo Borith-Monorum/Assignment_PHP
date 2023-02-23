@@ -1,16 +1,10 @@
-(function(){
-  const menuToggle = document.querySelector('.menu-toggle');
-  const darkToggle = document.querySelector('.toggle-dark');
+//================ dark mode ===========
 
-  menuToggle.addEventListener('click',() => {
-    document.body.classList.toggle('menu.active');
-  })
-  darkToggle.addEventListener('click',(event) => {
-    event.preventDefault();
-    document.documentElement.classList.toggle('dark');
-})();
+//================ dark mode ===========
 
 
+
+// ============= slide swiper ============ 
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,
     loop:true,
@@ -43,3 +37,4 @@ var swiper = new Swiper(".mySwiper", {
       $('.nav-list').toggleClass('show');
     })
   })
+// ============= slide swiper ============ 
