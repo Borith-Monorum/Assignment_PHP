@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <link rel="stylesheet" href="./style.css">
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 </head>
 <body class="bg-gray-100">
   <section>
@@ -45,28 +46,34 @@
     <!-- -------------------------------navbar--------------------------- -->
     <nav class="container  mx-auto bg-indigo-700 shadow-lg">
         <div class=" container mx-auto  ">
-            <div class="md:flex flex-wrap justify-between">
-                <ul class="  p-4 text-gray-400 md:self-center text-xl border-t md:border-none">
-                    <li class="md:inline-block  hidden px-3">
+            <div class=" md:flex flex-wrap justify-between">
+              <ul class=" p-4 text-gray-400 text-xl ">
+                <li class="float-left  md:inline-block    px-3">
+                  <i class="fa-solid fa-laptop text-white"></i>
+                  <a href="" class=" text-white text-1xl">Laptop</a>
+              </li>
+                <li class="flaot-right md:hidden px-3 flex flex-row-reverse">
+                  <i id="icon" class="fa-solid fa-bars hover:text-white"></i>
+                </li>             
+              </ul>
+              <ul class="nav-list  mx-auto bg-indigo-700 text-center p-4 text-gray-400 md:self-center text-xl border-t md:border-none">
+                    <li class="py-2 md:inline-block    px-3">
                         <i class="fa-solid fa-laptop text-white"></i>
                         <a href="" class=" text-white text-1xl">Laptop</a>
                     </li>
-                    <li class="md:inline-block  hidden px-3">
+                    <li class="py-2 md:inline-block   px-3">
                         <i class="fa-solid fa-desktop text-white"></i>
                         <a href="" class=" text-white text-1xl">Desktop</a>
                     </li>
-                    <li class="md:inline-block  hidden px-3">
+                    <li class="py-2 md:inline-block   px-3">
                         <i class="fa-solid fa-gamepad text-white"></i>
                         <a href="" class="text-white text-1xl">Gaming</a>
                     </li>
-                    <li class="md:inline-block  hidden px-3">
+                    <li class="py-2 md:inline-block   px-3">
                         <i class="fa-solid fa-user text-white"></i>
                         <a href="" class="text-white text-1xl">Contact Us</a>
                     </li>
-                    <li class=" md:hidden px-3 flex flex-row-reverse">
-                      <i class="fa-solid fa-bars hover:text-white"></i>
-                    </li>             
-                </ul>
+                  </ul>
                 <ul class="md:self-center">
                   <li class="md:inline-block  px-3 hidden lg:mt-0 mt-5 ">
                     <label class="relative block">

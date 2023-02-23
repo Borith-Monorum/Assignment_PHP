@@ -24,3 +24,9 @@ var swiper = new Swiper(".mySwiper", {
       },
     },
   });
+
+  $(document).ready(function(){
+    $('#icon').click(function(){
+      $('.nav-list').toggleClass('show');
+    })
+  })
