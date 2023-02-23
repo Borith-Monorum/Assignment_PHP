@@ -50,7 +50,7 @@
 
 
 // ============= slide swiper ============ 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new swiper(".mySwiper", {
     spaceBetween: 10,
     loop:true,
     pagination: {
