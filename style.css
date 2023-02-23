@@ -24,3 +24,9 @@
     /* display: none; */
     transition: all .3s ease-in;
   }
+  .nav-list{
+    display: none;
+  }
+  .show{
+    display: block;
+  }
