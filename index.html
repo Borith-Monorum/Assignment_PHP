@@ -11,9 +11,10 @@
     <!-- swiperJS  -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="./style.css">
 </head>
-<body class="">
+<body class="bg-gray-100">
+  <section>
     <!-- ---------------------header----------------------- -->
     <div class="container mx-auto bg-white">
         <div class="grid grid-rows grid-flow-col w-100 ">
@@ -25,44 +26,92 @@
             </div>
             <div class="row-span-2 ">
                 <img class="scale-100" src="/image/header/logo3.jpg" alt="" width="100%">
+    <div class="container  mx-auto bg-white mt-5">
+        <div class="grid grid-rows grid-flow-col justify-center bg-sky-500">
+         
+            <div class="">
+                <img src="./image/logo1.png" alt="">
+            </div>
+            <div class="">
+
+                  <img src="./image/logo2.gif" alt="">
+             
+            </div>
+            <div class=" row-span-3 ">
+                <img style="height:100%; width: 100%;"  src="./image/logo3.jpg" alt="">
+
             </div>
           </div>
     </div>
-    <!-- ---------------------header----------------------- -->
+    <!--end ---------------------header----------------------- -->
 
-    <marquee behavior="" direction="" class="p-3 border-y-2 border-indigo-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis hic omnis provident, repellat illum possimus tempora amet? Expedita minus harum magnam neque sapiente odit aut! Soluta veniam optio quos numquam?</marquee>
+
+    <!-- marquee  -->
+    <div class="container mx-auto">
+      <marquee class="" behavior="" direction="" class="p-3 border-y-2 border-indigo-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis hic omnis provident, repellat illum possimus tempora amet? Expedita minus harum magnam neque sapiente odit aut! Soluta veniam optio quos numquam?
+      </marquee>
+    </div>
+    <!-- marquee  -->
+
 
     <!-- -------------------------------navbar--------------------------- -->
-    <nav class="bg-indigo-700 shadow-lg">
-        <div class="container mx-auto ">
-            <div class="sm:flex justify-center">
-                <ul class="p-4 text-gray-400 sm:self-center text-xl border-t sm:border-none">
-                    <li class="sm:inline-block px-3">
+    <nav class="container  mx-auto bg-indigo-700 shadow-lg">
+        <div class=" container mx-auto  ">
+            <div class="md:flex flex-wrap justify-between">
+                <ul class="  p-4 text-gray-400 md:self-center text-xl border-t md:border-none">
+                    <li class="md:inline-block  hidden px-3">
                         <i class="fa-solid fa-laptop text-white"></i>
                         <a href="" class=" text-white text-1xl">Laptop</a>
                     </li>
-                    <li class="sm:inline-block px-3">
-                        <i class="fa-solid fa-keyboard text-white"></i>
-                        <a href="" class=" text-white text-1xl">SecondHand</a>
+                    <li class="md:inline-block  hidden px-3">
+                        <i class="fa-solid fa-desktop text-white"></i>
+                        <a href="" class=" text-white text-1xl">Desktop</a>
                     </li>
-                    <li class="sm:inline-block px-3">
-                        <i class="fa-solid fa-hand text-white"></i>
-                        <a href="" class="text-white text-1xl">Laptop Part</a>
+                    <li class="md:inline-block  hidden px-3">
+                        <i class="fa-solid fa-gamepad text-white"></i>
+                        <a href="" class="text-white text-1xl">Gaming</a>
                     </li>
-                    <li class="sm:inline-block px-3">
+                    <li class="md:inline-block  hidden px-3">
                         <i class="fa-solid fa-user text-white"></i>
                         <a href="" class="text-white text-1xl">Contact Us</a>
                     </li>
+                    <li class=" md:hidden px-3 flex flex-row-reverse">
+                      <i class="fa-solid fa-bars hover:text-white"></i>
+                    </li>             
                 </ul>
+                <ul class="md:self-center">
+                  <li class="md:inline-block  px-3 hidden lg:mt-0 mt-5 ">
+                    <label class="relative block">
+                      <span class="sr-only">Search</span>
+                      <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                        <i class="fa-solid fa-magnifying-glass h-5 w-5 fill-slate-300" viewBox="0 0 20 20"></i>
+                      </span>
+                      <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="text" name="search"/>
+                    </label>
+                  </li>
+                </ul>
+                
+
+              </div>
             </div>
-        </div>
     </nav>
+    <ul class="container mx-auto sm:self-center">
+      <li class="md:inline-block  px-3 md:hidden lg:mt-0 mt-5 ">
+        <label class="relative block">
+          <span class="sr-only">Search</span>
+          <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+            <i class="fa-solid fa-magnifying-glass h-5 w-5 fill-slate-300" viewBox="0 0 20 20"></i>
+          </span>
+          <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="text" name="search"/>
+        </label>
+      </li>
+    </ul>
     <!-- -------------------------------navbar--------------------------- -->
 
     
     <!-- ---------------------------------slider---------------------------------- -->
-      <div class="swiper mySwiper mt-3">
-        <div class="swiper-wrapper">
+      <div class="container  mx-auto swiper mySwiper mt-3 sm:px-0 px-2">
+        <div class="swiper-wrapper ">
             <!-- Slides -->
             <div class="swiper-slide bg-cover bg-center" style="background-image: url('https://blog.daraz.pk/wp-content/uploads/2020/01/Gaming_laptops_Banner.png');">
                 <span class="text text-white ">Lenovo</span>
@@ -83,36 +132,86 @@
       
       </div>
     <!-- ---------------------------------slider---------------------------------- -->
+  </section>
 
+<section class="category container mx-auto px-20 p-10 bg-white">
+  <div class="border border-t">
+        <!-- card  -->
+    <div class="border m-5 w-64 block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+          <!-- background-image  -->
+          <div class="bg-origin-content rounded-t-xl mt-5 bg-contain bg-center bg-no-repeat " style="width: 100%;height: 200px; background-image: url('https://www.goldonecomputer.com/image/cache/catalog/Products/MSI/2023/GAMING/Cyborg-15-A12VF-200x200.jpg');"></div>
+          <!--end background-image  -->
+
+        <div class="border py-2 bg-gradient-to-r from-pink-200 to-purple-200 text-2xl text-center font-extrabold ...">
+          <span class="drop-shadow-md bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500">
+            Special   <!-- Special -->
+          </span>
+        </div>
+        <!-- body card   -->
+          <div class="body p-3">
+            <ul class="list-none md:list-disc list-outside mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                  <li class="list-none text-sky-500 text-center capitalize mb-2 text-xl font-medium leading-tight ">
+                    DELL Alienware M15 R7 Original Spec
+                  </li>
+                  <li class="list-none text-red-500 text-center capitalize mb-2 text-4xl font-medium leading-tight ">
+                    $ 1,999
+                  </li>
+                 <li class="truncate text-red-500">
+                  <a href="">CPU : Intel Core i5-1235U 10-Core Up to 4.4Ghz Cache 12M</a>
+                 </li>
+                 <li class="truncate">
+                  <a href="">RAM : 8 GB LPDDR4 on board</a>
+                 </li>
+                 <li class="truncate">
+                  <a href="">SSD : 256 GB PCiE</a>
+                 </li>
+                 <li class="truncate">
+                  <a href="">DVD : NO</a>
+                 </li>
+                 <li class="truncate">
+                  <a href="">VGA1 : Intel Iris Xe Graphics</a>
+                 </li>
+                 <li class="truncate text-red-500">
+                  <a href="">VGA2 : NVIDIA RTX3070Ti 8GB</a>
+                 </li>
+                 <li class="truncate">
+                  <a href="">Killer Wi-Fi, Bluetooth, Webcam</a>
+                 </li>
+                 <li class="truncate">
+                  <a href=""> Card Reader, Network, RGB Key</a>
+                 </li>
+                 <li class="truncate text-red-500">
+                  <a href="">  Screen 15.6'' QHD 2K 240Hz</a>
+                 </li>
+                 <li class="truncate">
+                  <a href=""> OS: Windows 11Home License</a>
+                 </li>
+                 <li class="truncate">
+                  <a href=""> Weight : 2.32Kg, Color: Black</a>
+                 </li>
+                 <li class="truncate">
+                  <a href="">  Battery 6-Cells 86Whr</a>
+                 </li>
+                 <li class="truncate text-sky-600">
+                  <a href="">  Free Gaming Backpack+4items</a>
+                 </li>
+                 <li class="truncate text-sky-600">
+                  <a href="">  1Year warranty on part.</a>
+                 </li>
+   
+                </ul>
+            <div class="text-center">
+              <button type="button" class=" inline-block rounded-full bg-indigo-400 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-indigo-600-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-indigo-600-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-indigo-600-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"data-te-ripple-init data-te-ripple-color="light">
+                          Purchase 
+              </button>
+            </div>
+          </div>
+          <!-- body card   -->
+    </div>
+        <!-- card  -->
+  </div>
+</section>
 </body>
 
-<script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 10,
-      loop:true,
-      freeMode: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      autoplay:{
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-        1024: {
-          slidesPerView: 4,
-          spaceBetween: 20,
-        },
-      },
-    });
-  </script>
+<script src="./javascript.js"></script>
 </html>
