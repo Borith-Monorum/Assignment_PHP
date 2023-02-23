@@ -1,3 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input:checked ~ .dot {
+  transform: translateX(100%);
+  /* background-color: #132b50; */
+  }
+
 
 .swiper {
     margin: 5px auto;
@@ -24,4 +33,17 @@
     transform: translateY(60px);
     /* display: none; */
     transition: all .3s ease-in;
+  }
+
+
+  @media (max-width: 768px) {
+
+    .nav-list {
+  display: none;
+
+
+    }
+    .show{
+      display: block;
+    }
   }
