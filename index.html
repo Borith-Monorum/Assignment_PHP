@@ -28,35 +28,19 @@
   <!-- ----------------navigation----------- -->
   <section>
     <!-- ---------------------header----------------------- -->
-    <div class="container mx-auto bg-white">
-        <div class="grid grid-rows grid-flow-col w-100 ">
-            <div class="col-span-1 ">
-                <img src="/image/header/logo1.png" width="100%" alt="">
-            </div>
-            <div class="row-span-1 " >
-                <img src="/image/header/logo2.gif" width="100%"  alt="">
-            </div>
-            <div class="row-span-2 ">
-                <img class="scale-100" src="/image/header/logo3.jpg" alt="" width="100%">
-            </div>
     <div class="container  mx-auto bg-white ">
         <div class="grid grid-rows grid-flow-col justify-center dark:bg-gray-900">
-         
             <div class="">
                 <img src="./image/logo1.png" alt="">
             </div>
             <div class="">
-
-                  <img src="./image/logo2.gif" alt="">
-             
+                  <img src="./image/logo2.gif" alt="">    
             </div>
             <div class=" row-span-3 ">
                 <img style="height:100%; width: 100%;"  src="./image/logo3.jpg" alt="">
 
             </div>
           </div>
-    </div>
-    </div>
     </div>
     <!--end ---------------------header----------------------- -->
 
@@ -70,86 +54,86 @@
 
 
     <!-- -------------------------------navbar--------------------------- -->
-    <nav class="sticky select-none  top-0 z-10 container  mx-auto bg-indigo-700 shadow-lg">
-        <div class=" container mx-auto  ">
-            <div class=" md:flex flex-wrap justify-between">
-              <ul class=" h-14 flex   text-gray-400 text-xl ">
-                <li class=" flex-1 md:inline-block  self-center md:mt-5 px-3">
-                  <a href="" class="" >
-                    <img class="rounded-full" width="40px" src="https://th.bing.com/th/id/OIP.GBYQyVTK3AsqMJytDri_mQAAAA?pid=ImgDet&w=381&h=377&rs=1" alt="">
-                  </a>
-                </li>
-                
-                <li class="flex-2 self-center md:hidden px-3 ">
-                  <i id="icon" class="fa-solid fa-bars hover:text-white"></i>
-                </li>
+    <nav class="sticky select-none top-0 z-10 container  mx-auto bg-indigo-700 shadow-lg">
+      <div class=" container mx-auto  ">
+          <div class=" md:flex flex-wrap justify-between">
+            <ul class=" h-14 flex   text-gray-400 text-xl ">
+              <li class=" flex-1 md:inline-block  self-center md:mt-5 px-3">
+                <a href="" class="" >
+                  <img class="rounded-full" width="40px" src="https://th.bing.com/th/id/OIP.GBYQyVTK3AsqMJytDri_mQAAAA?pid=ImgDet&w=381&h=377&rs=1" alt="">
+                </a>
+              </li>
+              
+              <li class="flex-2 self-center md:hidden px-3 ">
+                <i id="icon" class="fa-solid fa-bars hover:text-white"></i>
+              </li>
 
-                <li class="list-none  md:hidden flex-2 self-center  px-5 ">
+              <li class="list-none  md:hidden flex-2 self-center  px-5 ">
+                <label for="dark-toggle" class="flex items-center cursor-pointer">
+                    <div class="relative">
+                    <input type="checkbox" name="dark-mode" id="dark-toggle" class="checkbox hidden">
+                    <div class="block border-[1px] dark:border-white border-white w-12 h-6 rounded-full"></div>
+                    <div class="dot absolute left-0 top-0  dark:bg-white bg-white w-6 h-6 rounded-full transition"></div>
+                    </div>
+                </label>
+              </li>
+            </ul>
+     
+            <ul class="nav-list  mx-auto bg-indigo-700 text-center p-4  text-gray-400 md:self-center text-xl border-t md:border-none">
+                  <li class="py-2 md:inline-block    px-3">
+                      <i class="fa-solid fa-laptop text-white"></i>
+                      <a href="" class=" text-white text-1xl">Laptop</a>
+                  </li>
+                  <li class="py-2 md:inline-block   px-3">
+                      <i class="fa-solid fa-desktop text-white"></i>
+                      <a href="" class=" text-white text-1xl">Desktop</a>
+                  </li>
+                  <li class="py-2 md:inline-block   px-3">
+                      <i class="fa-solid fa-gamepad text-white"></i>
+                      <a href="" class="text-white text-1xl">Gaming</a>
+                  </li>
+                  <li class="py-2 md:inline-block   px-3">
+                      <i class="fa-solid fa-user text-white"></i>
+                      <a href="" class="text-white text-1xl">Contact Us</a>
+                  </li>
+         
+            </ul>
+
+              <ul class="md:self-center flex">
+                <li class="md:inline-block  px-3 hidden lg:mt-0 mt-5 ">
+                  <label class="relative block">
+                    <span class="sr-only">Search</span>
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                      <i class="fa-solid fa-magnifying-glass h-5 w-5 fill-slate-300" viewBox="0 0 20 20"></i>
+                    </span>
+                    <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="text" name="search"/>
+                  </label>
+                </li>
+                <li class="list-none   flex-2 self-center hidden md:block  px-5 ">
                   <label for="dark-toggle" class="flex items-center cursor-pointer">
                       <div class="relative">
-                        <input type="checkbox" name="dark-mode" id="dark-toggle" class="checkbox hidden">
-                        <div class="block border-[1px] dark:border-white border-white w-12 h-6 rounded-full"></div>
-                        <div class="dot absolute left-0 top-0  dark:bg-white bg-white w-6 h-6 rounded-full transition"></div>
+                      <input type="checkbox" name="dark-mode" id="dark-toggle" class="checkbox hidden">
+                      <div class="dot  self-center dark:bg-white bg-rose-500 w-6 h-6 rounded-full transition"></div>
                       </div>
                   </label>
                 </li>
               </ul>
-       
-              <ul class="nav-list  mx-auto bg-indigo-700 text-center p-4  text-gray-400 md:self-center text-xl border-t md:border-none">
-                    <li class="py-2 md:inline-block    px-3">
-                        <i class="fa-solid fa-laptop text-white"></i>
-                        <a href="" class=" text-white text-1xl">Laptop</a>
-                    </li>
-                    <li class="py-2 md:inline-block   px-3">
-                        <i class="fa-solid fa-desktop text-white"></i>
-                        <a href="" class=" text-white text-1xl">Desktop</a>
-                    </li>
-                    <li class="py-2 md:inline-block   px-3">
-                        <i class="fa-solid fa-gamepad text-white"></i>
-                        <a href="" class="text-white text-1xl">Gaming</a>
-                    </li>
-                    <li class="py-2 md:inline-block   px-3">
-                        <i class="fa-solid fa-user text-white"></i>
-                        <a href="" class="text-white text-1xl">Contact Us</a>
-                    </li>
-           
-              </ul>
 
-                <ul class="md:self-center flex">
-                  <li class="md:inline-block  px-3 hidden lg:mt-0 mt-5 ">
-                    <label class="relative block">
-                      <span class="sr-only">Search</span>
-                      <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-                        <i class="fa-solid fa-magnifying-glass h-5 w-5 fill-slate-300" viewBox="0 0 20 20"></i>
-                      </span>
-                      <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="text" name="search"/>
-                    </label>
-                  </li>
-                  <li class="list-none   flex-2 self-center hidden md:block  px-5 ">
-                    <label for="dark-toggle" class="flex items-center cursor-pointer">
-                        <div class="relative">
-                        <input type="checkbox" name="dark-mode" id="dark-toggle" class="checkbox hidden">
-                        <div class="dot  self-center dark:bg-white bg-rose-500 w-6 h-6 rounded-full transition"></div>
-                        </div>
-                    </label>
-                  </li>
-                </ul>
-              </div>
-            </div>     
+            </div>
+          </div>  
   </nav>
-
-    <ul class="container  mx-auto sm:self-center">
-      <li class="md:inline-block  flex justify-center px-3 md:hidden lg:mt-0 mt-5 ">
-        <label class="flex-auto w-100 relative block">
-          <span class="sr-only">Search</span>
-          <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-            <i class="fa-solid fa-magnifying-glass h-3 w-5 fill-slate-300" viewBox="0 0 20 20"></i>
-          </span>
-          <input class=" placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="text" name="search"/>
-        </label>
-        <button class="mx-1 text-gray text-xl dark:bg-amber-500 dark:text-white py-1 px-5 rounded-lg bg-white">Search</button>
-      </li>
-    </ul>
+  <ul class="container  mx-auto sm:self-center">
+    <li class="md:inline-block  flex justify-center px-3 md:hidden lg:mt-0 mt-5 ">
+      <label class="flex-auto w-100 relative block">
+        <span class="sr-only">Search</span>
+        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+          <i class="fa-solid fa-magnifying-glass h-3 w-5 fill-slate-300" viewBox="0 0 20 20"></i>
+        </span>
+        <input class=" placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="text" name="search"/>
+      </label>
+      <button class="mx-1 text-gray text-xl dark:bg-amber-500 dark:text-white py-1 px-5 rounded-lg bg-white">Search</button>
+    </li>
+  </ul>
     <!-- -------------------------------navbar--------------------------- -->
 
     
